@@ -1,0 +1,6 @@
+node_modules
+dist
+.env
+tests/.core.test.mjs
+tools/.sim.mjs
+tools/.dbg.mjs

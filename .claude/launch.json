@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "voxwake", "runtimeExecutable": "node", "runtimeArgs": ["voxwake/server/server.mjs"], "port": 8080 }
+  ]
+}

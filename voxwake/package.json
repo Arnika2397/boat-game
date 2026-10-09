@@ -1,0 +1,33 @@
+{
+  "name": "voxwake",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "VOXWAKE - a voice-powered 3D Goa boat race. Your voice is the engine.",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "node server/server.mjs",
+    "build": "vite build",
+    "start": "node server/server.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "rolldown tests/core.test.ts --format esm --platform node -o tests/.core.test.mjs --external node:test --external node:assert/strict && node --test tests/.core.test.mjs tests/duel.test.mjs",
+    "sim": "rolldown tools/sim.ts --format esm --platform node -o tools/.sim.mjs && node tools/.sim.mjs",
+    "verify": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "@fontsource/bodoni-moda": "5.3.0",
+    "@fontsource/modak": "5.3.0",
+    "@fontsource/share-tech-mono": "5.3.0",
+    "@fontsource/space-mono": "5.3.0",
+    "jsqr": "1.4.0",
+    "qrcode": "1.5.4",
+    "three": "0.186.1",
+    "ws": "8.22.0"
+  },
+  "devDependencies": {
+    "@types/qrcode": "1.5.6",
+    "@types/three": "0.186.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.3"
+  }
+}

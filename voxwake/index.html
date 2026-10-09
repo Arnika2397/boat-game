@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#076B38" />
+    <meta name="description" content="VOXWAKE — a voice-powered 3D boat race through Goa. Your voice is the engine." />
+    <title>VOXWAKE · Your Voice Is The Engine</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23076B38'/%3E%3Cpath d='M10 40 Q32 54 54 40 L48 46 Q32 56 16 46Z' fill='%23FFE600'/%3E%3Cpath d='M32 10 L32 40 L18 38Z' fill='%23FF0CCF'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <canvas id="world"></canvas>
+    <div id="ui"></div>
+    <div id="flowdeck-wrap" class="flowdeck hidden">
+      <div class="fd-ring"><div class="fd-mic"></div></div>
+      <div class="fd-body">
+        <div class="fd-top"><span class="fd-label">FLOW DECK</span><span class="fd-src" id="fd-src">WISPR FLOW · READY</span></div>
+        <textarea id="flowdeck" rows="1" autocomplete="off" autocapitalize="off" spellcheck="false"
+          aria-label="Voice input. Hold your Wispr Flow key, speak, release."
+          placeholder="Hold your Wispr Flow key · speak · release"></textarea>
+        <div class="fd-last" id="fd-last"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
